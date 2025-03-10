@@ -6,7 +6,8 @@
     <title>Registration</title>
 </head>
    
-<body>
+<body style="background-image: url('../images/bghouseshift11.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat; background-attachment: fixed; margin: 0; height: 100vh;">
+    
 <form action="backend.php">
     <h2>House Shifting Registration Page</h2>
     <h3>Personal Information</h3>
