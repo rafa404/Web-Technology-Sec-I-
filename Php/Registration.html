@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Admin Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Admin Registration Form</h2>
+    <form method="post" action="validate.php">
+      <label>Admin ID:</label>
+      <input type="text" name="adminId" /><br /><br />
+
+      <label>Full Name:</label>
+      <input type="text" name="adminName" /><br /><br />
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="Male" /> Male
+      <input type="radio" name="gender" value="Female" /> Female <br />
+      <br />
+
+      <label>Email:</label>
+      <input type="email" name="email" /><br /><br />
+
+      <label>Phone:</label>
+      <input type="tel" name="phone" /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
