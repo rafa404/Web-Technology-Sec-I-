@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>House Shifting Form</title>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    label { display: block; margin-top: 10px; }
+    input, textarea, select { width: 300px; padding: 8px; margin-top: 5px; }
+    .error { color: red; font-weight: bold; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <h2>House Shifting Service Request</h2>
+  <form id="shiftForm" onsubmit="return validateForm()" method="POST">
+    <label>Name: <input type="text" id="name" name="name" /></label>
+    <label>Address: <input type="text" id="address" name="address" /></label>
+    <label>Phone Number: <input type="text" id="phone" name="phone" /></label>
+    <label>Comment: <textarea id="comment" name="comment"></textarea></label>
+    <label>Service Type:
+      <select id="serviceType" name="serviceType">
+        <option value="">--Select--</option>
+        <option value="local">Local</option>
+        <option value="interstate">Interstate</option>
+        <option value="international">International</option>
+      </select>
+    </label>
+    <br><br>
+    <button type="submit">Submit</button>
+    <p id="errorMsg" class="error"></p>
+  </form>
+
+  <!-- Link to external JS -->
+  <script src="validate.js"></script>
+
+</body>
+</html>
