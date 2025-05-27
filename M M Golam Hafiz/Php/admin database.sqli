@@ -1,0 +1,12 @@
+USE house_shifting_system;
+
+CREATE TABLE admin_registration (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    adminId VARCHAR(50) NOT NULL,
+    adminName VARCHAR(100) NOT NULL,
+    gender VARCHAR(10) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    filePath VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
