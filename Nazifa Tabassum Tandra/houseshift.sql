@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 27, 2025 at 07:37 AM
+-- Generation Time: May 27, 2025 at 07:50 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -28,12 +28,21 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `client` (
-  `ClientName` varchar(240) NOT NULL DEFAULT current_timestamp(),
-  `ClientID` int(15) NOT NULL DEFAULT current_timestamp(),
+  `ClientName` varchar(240) NOT NULL,
+  `ClientID` int(15) NOT NULL,
   `ClientAdd` varchar(240) NOT NULL,
   `ClientPhone` int(15) NOT NULL,
   `DateofShift` datetime(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `client`
+--
+
+INSERT INTO `client` (`ClientName`, `ClientID`, `ClientAdd`, `ClientPhone`, `DateofShift`) VALUES
+('Rahi Ahmed', 4555, 'Bashundhara R/A, Dhaka.', 1111111111, '2025-05-29 11:46:02.000000'),
+('Tadrish Tisa', 4566, 'Rampura, Dhaka.', 1333333333, '2025-05-31 11:48:13.000000'),
+('Riya Das', 4660, 'Baridhara H block, Dhaka.', 1222222222, '2025-05-30 11:48:13.000000');
 
 --
 -- Indexes for dumped tables
